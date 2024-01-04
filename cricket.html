@@ -36,6 +36,10 @@
         win : 0,
         lost:0,
         tie:0,
+
+        displayScore : function(){
+          return `No of Matches Won : ${score.win} , Lost : ${score.lost} , Tie : ${score.tie});`
+        }
       };
 
       // let computerChoice;
@@ -95,8 +99,7 @@
         alert(`You have chosen ${userMove}. Computer choice is ${computerMove} and 
         
         ${result}  
-        
-        Won : ${score.win} , Lost : ${score.lost} , Tie : ${score.tie}`);
+        ${score.displayScore()}`);
       }
     </script>
   </body>
